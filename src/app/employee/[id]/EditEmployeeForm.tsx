@@ -35,7 +35,7 @@ export default function EditEmployeForm(){
             <Input 
             required
             name="salary"
-            placeholder="Salary"
+            placeholder="Phone"
             className="w-full"
             type="number"
             

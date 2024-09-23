@@ -46,7 +46,7 @@ model Empoylee {
   name        String
   email       String?
   address     String
-  salary      Int
+  Phone      String
   userId      String?
   users       User?         @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt   DateTime      @default(now())

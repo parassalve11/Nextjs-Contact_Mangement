@@ -17,11 +17,11 @@ export async function editEmploye(formData: FormData) {
   const name = formData.get("name")?.toString();
   const email = formData.get("email")?.toString();
   const address = formData.get("address")?.toString();
-  const salary = Number(formData.get("salary"));
+  const Phone = formData.get("salary")?.toString();
 
   
 
-  if (!name || !email || !address || !salary) {
+  if (!name || !email || !address || !Phone) {
     throw new Error("Plaese check your all Fileds.");
   }
   const session = await validRequest();
@@ -48,7 +48,7 @@ export async function editEmploye(formData: FormData) {
       name,
      email,
      address,
-     salary
+     Phone
     },
   });
 

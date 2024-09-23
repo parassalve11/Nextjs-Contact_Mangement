@@ -7,9 +7,9 @@ export async function addEmploye(formData: FormData) {
   const name = formData.get("name")?.toString();
   const email = formData.get("email")?.toString();
   const address = formData.get("address")?.toString();
-  const salary = Number(formData.get("salary"));
+  const Phone = formData.get("salary")?.toString();
 
-  if (!name || !email || !address || !salary) {
+  if (!name || !email || !address || !Phone) {
     throw new Error("Plaese check your all Fileds.");
   }
 
@@ -34,7 +34,7 @@ const employe = await db.empoylee.findFirst({
       name,
      email,
      address,
-     salary
+     Phone
     },
   });
 
@@ -51,3 +51,5 @@ const employe = await db.empoylee.findFirst({
 
   redirect("/");
 }
+
+

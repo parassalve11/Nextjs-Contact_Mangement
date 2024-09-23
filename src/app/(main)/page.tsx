@@ -20,7 +20,7 @@ export default async function Home() {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                             </svg>
                         </Link>
-                        <h1 className=' text-center text-2xl font-semibold'>Employee Detail List</h1>
+                        <h1 className=' text-center text-2xl font-semibold'>Contact Detail List</h1>
                     </div>
                     <table className=" w-full divide-y divide-gray-200 ">
                         <thead className="bg-gray-50 ">
@@ -53,7 +53,7 @@ export default async function Home() {
                                     scope="col"
                                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase "
                                 >
-                                    Salary
+                                    Phone
                                 </th>
                                 <th
                                     scope="col"
